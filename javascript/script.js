@@ -5,27 +5,42 @@
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
-let kmPercorsi = prompt ('quanti km percorerrai?')
-console.log (kmPercorsi);
+// let kmPercorsi = document.getElementById ('validationDefault01').value;
+// console.log (kmPercorsi);
 
-let eta = prompt ('quanti hanni hai?')
-console.log (eta)
+let calcola = document.getElementById ('genera');
+calcola.addEventListener ('click',function(){
 
-let PriceKm = 0.21
+    let identita = (document.getElementById ('nomecognome').value);
+    console.log ('identita', identita , typeof identita);
 
-let ParzialPrice = (kmPercorsi * PriceKm)
-console.log (ParzialPrice)
+    let eta = parseInt(document.getElementById ('anni').value);
+    console.log ('eta', eta , typeof eta);
 
-if (eta < 18){
+    let destinazione = (document.getElementById ('destinazione').value);
+    console.log ('destinazione', destinazione , typeof destinazione);
 
-    ParzialPrice = ( ParzialPrice * 0.8 )
-}
-else if (eta > 65) {
+    let kmPercorsi = parseInt(document.getElementById ('km').value);
+    console.log ('kmPercorsi', kmPercorsi , typeof kmPercorsi);
 
-    ParzialPrice = (ParzialPrice * 0.6)
+    let PriceKm = 0.21
 
-}
+    let ParzialPrice = (kmPercorsi * PriceKm)
+    console.log (ParzialPrice)
 
-ParzialPrice = ParzialPrice.toFixed (2);
+    if (eta < 18){
 
-document.getElementById('prezzo') .innerHTML = `il tuo prezzo è ${ParzialPrice}£`
+        ParzialPrice = ( ParzialPrice * 0.8 )
+    }
+    else if (eta > 65) {
+
+        ParzialPrice = (ParzialPrice * 0.6)
+
+    }
+
+    ParzialPrice = ParzialPrice.toFixed (2);
+})
+
+
+
+

@@ -15,8 +15,50 @@
             <!-- inizio main -->
         
             <main>
+            <div class="container">
+              <h1>Trenitalia</h1>
+              <section class="generator-top">
+              <form class="row g-3 my-5">
+                <div class="col-6">
+                  <label for="nomecognome" class="form-label">Nome e Cognome</label>
+                  <input type="text" class="form-control" id="nomecognome" required>
+                </div>
+                <div class="col-6">
+                  <label for="km" class="form-label">Km percorsi</label>
+                  <input type="text" class="form-control" id="km" required>
+                </div>
+                <div class="col-6">
+                  <label for="destinazione" class="form-label">Città</label>
+                  <input type="text" class="form-control" id="destinazione" required>
+                </div>
+                <div class="col-6">
+                  <label for="anni" class="form-label">Età</label>
+                  <input type="text" class="form-control" id="anni" required>
+                </div>
+                <div class="col-6">
+                  <label for="fascia" class="form-label">Fascia d'età</label>
+                  <select class="form-select" id="fascia" required>
+                    <option selected disabled value=""></option>
+                    <option> minorenne</option>
+                    <option> maggiorenne</option>
+                    <option> over 65 </option>
+                  </select>
+                </div> 
+                <div class="row my-4 d-flex justify-content-center">
+                  <div class="col-2">
+                    <button class="btn btn-primary" id="genera"  type="button">Calcola</button>
+                  </div>
+                  <div class="col-2">
+                    <button class="btn btn-primary" type="reset">Annulla</button>
+                  </div>
+                </div>
+              </form>
+            
+              </section>
+              <section class="generator-bottom">
 
-       
+              </section>
+            </div>  
             </main>
         
             <!-- fine main -->
