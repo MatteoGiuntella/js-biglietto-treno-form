@@ -23,6 +23,9 @@ calcola.addEventListener ('click',function(){
     let kmPercorsi = parseInt(document.getElementById ('km').value);
     console.log ('kmPercorsi', kmPercorsi , typeof kmPercorsi);
 
+    let entita = (document.getElementById ('fascia').value);
+    console.log ('entita', entita , typeof entita);
+
     let PriceKm = 0.21
 
     let ParzialPrice = (kmPercorsi * PriceKm)
@@ -39,6 +42,14 @@ calcola.addEventListener ('click',function(){
     }
 
     ParzialPrice = ParzialPrice.toFixed (2);
+    
+    document.getElementById('datiNM').innerHTML = (identita);
+
+    document.getElementById('price').innerHTML = (ParzialPrice);
+
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random(1) * 10);
+
+    document.getElementById("nmrviaggio").innerHTML = Math.floor(Math.random(10000) * 100000);
 })
 
 

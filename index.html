@@ -39,16 +39,16 @@
                   <label for="fascia" class="form-label">Fascia d'età</label>
                   <select class="form-select" id="fascia" required>
                     <option selected disabled value=""></option>
-                    <option> minorenne</option>
-                    <option> maggiorenne</option>
-                    <option> over 65 </option>
+                    <option value="minorenne"> minorenne</option>
+                    <option value="maggiorenne"> maggiorenne</option>
+                    <option value="over 65"> over 65 </option>
                   </select>
                 </div> 
                 <div class="row my-4 d-flex justify-content-center">
-                  <div class="col-2">
+                  <div class="col-3">
                     <button class="btn btn-primary" id="genera"  type="button">Calcola</button>
                   </div>
-                  <div class="col-2">
+                  <div class="col-3">
                     <button class="btn btn-primary" type="reset">Annulla</button>
                   </div>
                 </div>
@@ -56,7 +56,29 @@
             
               </section>
               <section class="generator-bottom">
+                <div class="container">
+                  <div class="row">
+                    <div class="col12">
+                      <h2>Il tuo biglietto</h2>
+                    </div>
+                    <div class="col-6">
+                      <span>Nome e Cognome :</span><span class="mx-2" id="datiNM"></span>
+                    </div>
+                    <div class="col-6">
+                      <span>Prezzo :</span><span class="mx-2" id="price"></span>
+                    </div>
+                    <div class="col-6">
+                      <span>Carrozza :</span><span class="mx-2" id="carrozza"></span>
+                    </div>
+                    <div class="col-6">
+                      <span>Numero veicolo :</span><span class="mx-2" id="nmrviaggio"></span>
+                    </div>
+                    <div class="col-7 d-flex justify-content-center my-4">
+                      <button type="button" class="btn btn-primary">Acquista</button>
+                    </div>
 
+                  </div>
+                </div>
               </section>
             </div>  
             </main>
