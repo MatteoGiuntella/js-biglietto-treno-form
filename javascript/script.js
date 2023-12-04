@@ -43,13 +43,23 @@ calcola.addEventListener ('click',function(){
 
     ParzialPrice = ParzialPrice.toFixed (2);
     
-    document.getElementById('datiNM').innerHTML = (identita);
+    document.getElementById('datiNM').innerHTML = identita;
 
     document.getElementById('price').innerHTML = (ParzialPrice);
 
     document.getElementById("carrozza").innerHTML = Math.floor(Math.random(1) * 10);
 
     document.getElementById("nmrviaggio").innerHTML = Math.floor(Math.random(10000) * 100000);
+})
+
+document.getElementById('reset').addEventListener('click', function() {
+    document.getElementById('datiNM').innerHTML = '';
+
+    document.getElementById('price').innerHTML = '';
+
+    document.getElementById("carrozza").innerHTML = '';
+
+    document.getElementById("nmrviaggio").innerHTML = '';
 })
 
 
