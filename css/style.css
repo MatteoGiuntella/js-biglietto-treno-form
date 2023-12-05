@@ -1,6 +1,7 @@
 main{
-    background-color: red;
+    background-image: url(https://www.repstatic.it/content/nazionale/img/2023/06/08/122528062-f43378ed-5043-49d0-a27e-9fee2191c6a7.jpg);
 }
 *{
-    color: white;
+    color: darkred;
+    font-weight: bold;
 }
